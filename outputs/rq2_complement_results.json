@@ -1,0 +1,71 @@
+{
+  "device": "cuda",
+  "precision": "fp32",
+  "batch_sizes": [
+    1,
+    16,
+    64
+  ],
+  "channels": 64,
+  "image_size": 32,
+  "iters": 100,
+  "warmup": 20,
+  "seed": 7,
+  "repeats": 5,
+  "results": {
+    "1": {
+      "fast": {
+        "latency_ms_mean": 0.05527019500732422,
+        "latency_ms_std": 0.007099491519415857,
+        "latency_ms_p50": 0.05619525909423828,
+        "latency_ms_p95": 0.06406307220458984,
+        "throughput_mean": 18403.752780164035,
+        "max_abs_diff_max": 0.0
+      },
+      "deterministic": {
+        "latency_ms_mean": 0.07706117630004883,
+        "latency_ms_std": 0.011658605466176789,
+        "latency_ms_p50": 0.07506370544433594,
+        "latency_ms_p95": 0.09305715560913086,
+        "throughput_mean": 13267.542548862184,
+        "max_abs_diff_max": 0.0
+      }
+    },
+    "16": {
+      "fast": {
+        "latency_ms_mean": 0.14110946655273438,
+        "latency_ms_std": 0.003737568944636529,
+        "latency_ms_p50": 0.1401376724243164,
+        "latency_ms_p95": 0.14512920379638672,
+        "throughput_mean": 113467.5309996997,
+        "max_abs_diff_max": 0.0
+      },
+      "deterministic": {
+        "latency_ms_mean": 0.1240835189819336,
+        "latency_ms_std": 0.013571033622956186,
+        "latency_ms_p50": 0.12506723403930664,
+        "latency_ms_p95": 0.14209413528442383,
+        "throughput_mean": 130497.97070210901,
+        "max_abs_diff_max": 0.0
+      }
+    },
+    "64": {
+      "fast": {
+        "latency_ms_mean": 0.44172239303588867,
+        "latency_ms_std": 0.017830008451629836,
+        "latency_ms_p50": 0.43231964111328125,
+        "latency_ms_p95": 0.46436119079589844,
+        "throughput_mean": 145121.4273983571,
+        "max_abs_diff_max": 0.0
+      },
+      "deterministic": {
+        "latency_ms_mean": 0.5494146347045898,
+        "latency_ms_std": 0.028199914236896374,
+        "latency_ms_p50": 0.535428524017334,
+        "latency_ms_p95": 0.5924491882324219,
+        "throughput_mean": 116773.94558693534,
+        "max_abs_diff_max": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+torch>=2.1
+torchvision>=0.16
+numpy>=1.24
+transformers>=4.39
+triton>=2.2

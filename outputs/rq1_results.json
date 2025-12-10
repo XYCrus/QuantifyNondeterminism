@@ -1,0 +1,79 @@
+{
+    "model": "gpt2-large",
+    "precision": "bfloat16",
+    "num_runs": 10,
+    "avg_diff_standard": 0.175,
+    "avg_diff_invariant": 0.0,
+    "detailed_runs": [
+        {
+            "run_id": 1,
+            "prompt_excerpt": "The quick brown fox jumps over...",
+            "diff_standard": 0.25,
+            "diff_invariant": 0.0,
+            "success": true
+        },
+        {
+            "run_id": 2,
+            "prompt_excerpt": "Artificial intelligence is tra...",
+            "diff_standard": 0.125,
+            "diff_invariant": 0.0,
+            "success": true
+        },
+        {
+            "run_id": 3,
+            "prompt_excerpt": "To be or not to be, that is th...",
+            "diff_standard": 0.125,
+            "diff_invariant": 0.0,
+            "success": true
+        },
+        {
+            "run_id": 4,
+            "prompt_excerpt": "The grand unifying theory of p...",
+            "diff_standard": 0.125,
+            "diff_invariant": 0.0,
+            "success": true
+        },
+        {
+            "run_id": 5,
+            "prompt_excerpt": "Python is a popular programmin...",
+            "diff_standard": 0.125,
+            "diff_invariant": 0.0,
+            "success": true
+        },
+        {
+            "run_id": 6,
+            "prompt_excerpt": "In the beginning God created t...",
+            "diff_standard": 0.25,
+            "diff_invariant": 0.0,
+            "success": true
+        },
+        {
+            "run_id": 7,
+            "prompt_excerpt": "A journey of a thousand miles ...",
+            "diff_standard": 0.125,
+            "diff_invariant": 0.0,
+            "success": true
+        },
+        {
+            "run_id": 8,
+            "prompt_excerpt": "Quantum mechanics describes na...",
+            "diff_standard": 0.25,
+            "diff_invariant": 0.0,
+            "success": true
+        },
+        {
+            "run_id": 9,
+            "prompt_excerpt": "The stock market experienced a...",
+            "diff_standard": 0.125,
+            "diff_invariant": 0.0,
+            "success": true
+        },
+        {
+            "run_id": 10,
+            "prompt_excerpt": "Climate change poses a signifi...",
+            "diff_standard": 0.25,
+            "diff_invariant": 0.0,
+            "success": true
+        }
+    ]
+}
